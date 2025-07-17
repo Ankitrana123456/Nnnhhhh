@@ -56,9 +56,9 @@ api_url = "http://master-api-v3.vercel.app/"
 api_token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNzkxOTMzNDE5NSIsInRnX3VzZXJuYW1lIjoi4p61IFtvZmZsaW5lXSIsImlhdCI6MTczODY5MjA3N30.SXzZ1MZcvMp5sGESj0hBKSghhxJ3k1GTWoBUbivUe1I"
 token_cp ='eyJjb3Vyc2VJZCI6IjQ1NjY4NyIsInR1dG9ySWQiOm51bGwsIm9yZ0lkIjo0ODA2MTksImNhdGVnb3J5SWQiOm51bGx9r'
 adda_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkcGthNTQ3MEBnbWFpbC5jb20iLCJhdWQiOiIxNzg2OTYwNSIsImlhdCI6MTc0NDk0NDQ2NCwiaXNzIjoiYWRkYTI0Ny5jb20iLCJuYW1lIjoiZHBrYSIsImVtYWlsIjoiZHBrYTU0NzBAZ21haWwuY29tIiwicGhvbmUiOiI3MzUyNDA0MTc2IiwidXNlcklkIjoiYWRkYS52MS41NzMyNmRmODVkZDkxZDRiNDkxN2FiZDExN2IwN2ZjOCIsImxvZ2luQXBpVmVyc2lvbiI6MX0.0QOuYFMkCEdVmwMVIPeETa6Kxr70zEslWOIAfC_ylhbku76nDcaBoNVvqN4HivWNwlyT0jkUKjWxZ8AbdorMLg"
-photologo = 'https://envs.sh/bIV.jpg' #https://envs.sh/GV0.jpg
-photoyt = 'https://envs.sh/bIV.jpg' #https://envs.sh/GVi.jpg
-photocp = 'https://iili.io/FXserMl.md.jpg'
+photologo = 'https://tinypic.host/images/2025/07/17/IMG_20250717_175841_664.jpg' #https://envs.sh/GV0.jpg
+photoyt = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg' #https://envs.sh/GVi.jpg
+photocp = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg'
 photozip = 'https://envs.sh/bIV.jpg'
 
 
@@ -72,8 +72,8 @@ keyboard = InlineKeyboardMarkup(
 
 # Image URLs for the random image feature
 image_urls = [
-    "https://tinypic.host/images/2025/02/07/IMG_20250207_224444_975.jpg",
-    "https://tinypic.host/images/2025/02/07/DeWatermark.ai_1738952933236-1.png",
+    "https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
+    "https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.md.png",
     # Add more image URLs as needed
 ]
 
@@ -498,7 +498,7 @@ async def start(bot, m: Message):
     caption = f"🌟 Welcome {m.from_user.mention} ! 🌟"
     start_message = await bot.send_photo(
         chat_id=m.chat.id,
-        photo="https://tinypic.host/images/2025/07/14/IMG_20250714_161041_194.jpg",
+        photo="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
         caption=caption
     )
 
@@ -535,7 +535,7 @@ async def start(bot, m: Message):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("🖱️Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰 Ꭻɪ", url="https://t.me/OWNER_004")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰 Ꭻɪ", url="https://t.me/OWNER_0044")],
         ])
         
         await start_message.edit_text(
@@ -549,10 +549,10 @@ async def start(bot, m: Message):
         keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("🖱️Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰 Ꭻɪ", url="https://t.me/OWNER_004")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰 Ꭻɪ", url="https://t.me/OWNER_0044")],
         ])
         await start_message.edit_text(
-           f" 🎉 Welcome {m.from_user.first_name} to DRM Bot! 🎉\n\n"
+           f" 🎉 Welcome {m.from_user.first_name} to txt to video uploader 💗 Bot! 🎉\n\n"
            f"**You are currently using the free version.** 🆓\n\n<blockquote expandable>I'm here to make your life easier by downloading videos from your **.txt** file 📄 and uploading them directly to Telegram!</blockquote>\n\n**Want to get started? Press /id**\n\n💬 Contact : [{CREDIT}⁬](tg://openmessage?user_id={OWNER}) to Get The Subscription 🎫 and unlock the full potential of your new bot! 🔓\n", disable_web_page_preview=True, reply_markup=keyboard
     )
 
@@ -564,12 +564,12 @@ async def back_to_main_menu(client, callback_query):
     keyboard = InlineKeyboardMarkup([
             [InlineKeyboardButton("💎 Features", callback_data="feat_command"), InlineKeyboardButton("🖱️Commands", callback_data="cmd_command")],
             [InlineKeyboardButton("💳 Plans", callback_data="upgrade_command")],
-            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰", url="https://t.me/OWNER_004")],
+            [InlineKeyboardButton(text="📞 Contact", url=f"tg://openmessage?user_id={OWNER}"), InlineKeyboardButton(text="𝐒𝙷𝙰𝚁𝙼𝙰", url="https://t.me/OWNER_0044")],
         ])
     
     await callback_query.message.edit_media(
       InputMediaPhoto(
-        media="https://envs.sh/GVI.jpg",
+        media="https://envs.sh/bIV.jpg",
         caption=caption
       ),
       reply_markup=keyboard
@@ -587,7 +587,7 @@ async def cmd(client, callback_query):
     ])
     await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -604,7 +604,7 @@ async def help_button(client, callback_query):
         f"▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰▰\n" 
         f"📌 𝗠𝗮𝗶𝗻 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀:\n\n"  
         f"➥ /start – Bot Status Check\n"
-        f"➥ /drm – Extract from .txt (Auto)\n"
+        f"➥ /Ankit1 – Extract from .txt (Auto)\n"
         f"➥ /y2t – YouTube → .txt Converter\n"  
         f"➥ /ytm – YT .txt → .mp3 downloader\n"  
         f"➥ /yt2m – YT link → .mp3 downloader\n"  
@@ -627,7 +627,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -654,7 +654,7 @@ async def help_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_00000000fc2461fbbdd6bc500cecbff8_conversation_id6874702c-9760-800e-b0bf-8e0bcf8a3833message_id964012ce-7ef5-4ad4-88e0-1c41ed240c03-1-1.jpg",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -682,13 +682,13 @@ async def upgrade_button(client, callback_query):
            f"• 🎓 Utkarsh Protection(Video + PDF)\n"
            f"• 🎓 All Non DRM+AES Encrypted URLs\n"
            f"• 🎓 MPD URLs if the key is known (e.g., Mpd_url?key=key XX:XX)</blockquote>\n\n"
-           f"<b>💵 Monthly Plan: free</b>\n\n"
+           f"<b>💵 Monthly Plan: 100₹</b>\n\n"
            f"If you want to buy membership of the bot, feel free to contact [{CREDIT}](tg://user?id={OWNER})\n"
     )  
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/GVI.jpg",
+      media="https://envs.sh/bIV.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -708,7 +708,7 @@ async def feature_button(client, callback_query):
   ])
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -720,7 +720,7 @@ async def pin_button(client, callback_query):
   caption = f"**Auto Pin 📌 Batch Name :**\n\nAutomatically Pins the Batch Name in Channel or Group, If Starting from the First Link."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -732,7 +732,7 @@ async def watermark_button(client, callback_query):
   caption = f"**Custom Watermark :**\n\nSet Your Own Custom Watermark on Videos for Added Personalization."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -745,7 +745,7 @@ async def restart_button(client, callback_query):
   caption = f"**🔄 Resat Command:**\n\nIf You Want to Resat Your Bot, Simply Use Command /resat."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -757,7 +757,7 @@ async def pin_button(client, callback_query):
   caption = f"**🖨️ Bot Working Logs:**\n\n◆/logs - Bot Send Working Logs in .txt File."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -769,7 +769,7 @@ async def custom_button(client, callback_query):
   caption = f"**🖋️ Custom File Name:**\n\nSupport for Custom Name before the File Extension.\nAdd name ..when txt is uploading"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -781,7 +781,7 @@ async def titlle_button(client, callback_query):
   caption = f"**Custom Title Feature :**\nAdd and customize titles at the starting\n**NOTE 📍 :** The Titile must enclosed within (Title), Best For appx's .txt file."
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -793,7 +793,7 @@ async def pin_button(client, callback_query):
   caption = f"**📢 Broadcasting Support:**\n\n◆/broadcast - 📢 Broadcast to All Users.\n◆/broadusers - 👁️ To See All Broadcasting User"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -805,7 +805,7 @@ async def editor_button(client, callback_query):
   caption = f"**🤖 Available Commands 🗓️**\n◆/t2t for text to .txt file\n"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://tinypic.host/images/2025/07/14/file_000000002d44622f856a002a219cf27aconversation_id68747543-56d8-800e-ae47-bb6438a09851message_id8e8cbfb5-ea6c-4f59-974a-43bdf87130c0.png",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -817,7 +817,7 @@ async def y2t_button(client, callback_query):
   caption = f"**YouTube Commands:**\n\n◆/ytm - 🎶 YT .txt → .mp3 downloader\n◆/yt2m - 🎵 YT link → .mp3 downloader\n◆/y2t - 🔪 YouTube Playlist or Web Search → .txt Converter"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/GVi.jpg",
+      media="https://envs.sh/bIV.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -860,7 +860,7 @@ async def send_logs(client: Client, m: Message):  # Correct parameter name
         await m.reply_text(f"**Error sending logs:**\n<blockquote>{e}</blockquote>")
 
 
-@bot.on_message(filters.command(["drm"]) )
+@bot.on_message(filters.command(["Ankit1"]) )
 async def txt_handler(bot: Client, m: Message):  
     global processing_request, cancel_requested, cancel_message
     processing_request = True
