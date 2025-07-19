@@ -61,6 +61,11 @@ photoyt = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg' #
 photocp = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg'
 photozip = 'https://envs.sh/bIV.jpg'
 
+async def show_random_emojis(message):
+    emojis = ['🎊', '🔮', '😎', '⚡️', '🚀', '✨', '💥', '🎉', '🥂', '🍾', '🦠', '🤖', '❤️‍🔥', '🕊️', '💃', '🥳','🐅','🦁']
+    emoji_message = await message.reply_text(' '.join(random.choices(emojis, k=1)))
+    return emoji_message
+    
 
 # Inline keyboard for start command
 BUTTONSCONTACT = InlineKeyboardMarkup([[InlineKeyboardButton(text="📞 Contact", url="https://t.me/RANA_JII_27_BOT")]])
@@ -688,7 +693,7 @@ async def upgrade_button(client, callback_query):
     
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/bIV.jpg",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
     ),
     reply_markup=keyboard
@@ -817,7 +822,7 @@ async def y2t_button(client, callback_query):
   caption = f"**YouTube Commands:**\n\n◆/ytm - 🎶 YT .txt → .mp3 downloader\n◆/yt2m - 🎵 YT link → .mp3 downloader\n◆/y2t - 🔪 YouTube Playlist or Web Search → .txt Converter"
   await callback_query.message.edit_media(
     InputMediaPhoto(
-      media="https://envs.sh/bIV.jpg",
+      media="https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.th.jpg",
       caption=caption
       ),
       reply_markup=keyboard
@@ -1149,10 +1154,10 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
-                cc1 = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
-                cczip = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
-                ccimg = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤╚════════════════════╝'
+                cc = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] @RANAJII25.mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
+                cc1 = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} @RANAJII25.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
+                cczip = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} @RANAJII25.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
+                ccimg = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} @RANAJII25.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤╚════════════════════╝'
                 ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
                 cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
                   
