@@ -59,7 +59,7 @@ adda_token = "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJkcGthNTQ3MEBnbWFpbC5jb20iLCJhdWQiO
 photologo = 'https://tinypic.host/images/2025/07/17/IMG_20250717_175841_664.jpg' #https://envs.sh/GV0.jpg
 photoyt = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg' #https://envs.sh/GVi.jpg
 photocp = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg'
-photozip = 'https://envs.sh/bIV.jpg'
+photozip = 'https://tinypic.host/images/2025/07/17/IMG_20250713_160846_190.jpg'
 
 async def show_random_emojis(message):
     emojis = ['🎊', '🔮', '😎', '⚡️', '🚀', '✨', '💥', '🎉', '🥂', '🍾', '🦠', '🤖', '❤️‍🔥', '🕊️', '💃', '🥳','🐅','🦁']
@@ -874,7 +874,7 @@ async def txt_handler(bot: Client, m: Message):
             print(f"User ID not in AUTH_USERS", m.chat.id)
             await bot.send_message(m.chat.id, f"<blockquote>__**Oopss! You are not a Premium member\nPLEASE /upgrade YOUR PLAN\nSend me your user id for authorization\nYour User id**__ - `{m.chat.id}`</blockquote>\n")
             return
-    editable = await m.reply_text(f"**__Hii, I am drm Downloader Bot__\n<blockquote><i>Send Me Your text file which enclude Name with url...\nE.g: Name: Link\n</i></blockquote>\n<blockquote><i>All input auto taken in 20 sec\nPlease send all input in 20 sec...\n</i></blockquote>**")
+    editable = await m.reply_text(f"**__Hii, I am Rana drm Downloader Bot__\n<blockquote><i>Send Me Your text file which enclude Name with url...\nE.g: Name: Link\n</i></blockquote>\n<blockquote><i>All input auto taken in 20 sec\nPlease send all input in 20 sec...\n</i></blockquote>**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await bot.send_document(OWNER, x)
@@ -1154,7 +1154,7 @@ async def txt_handler(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}" "{url}" -o "{name}.mp4"'
 
             try:
-                cc = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] @RANAJII25.mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
+                cc = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p] @RANAJII25.mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n QUALITY - [{res}p] /n/n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
                 cc1 = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1} @RANAJII25.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤️╚════════════════════╝'
                 cczip = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1} @RANAJII25.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
                 ccimg = f'╔══════[ 𝐑𝐀𝐍𝐀 𝐉𝐈𝐈 ]══════╗\n\n[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1} @RANAJII25.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n\n╔════════════════════╗            [𝐑𝐀𝐍𝐀 𝐉𝐈𝐈](https://t.me/OFFICIAL_RANA_JII) ❤️❤╚════════════════════╝'
